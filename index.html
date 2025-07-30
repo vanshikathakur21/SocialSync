@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Post Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Social Post Generator</h1>
+
+    <label>Age:</label>
+    <input type="text" id="age"><br>
+
+    <label>Country:</label>
+    <input type="text" id="country"><br>
+
+    <label>State:</label>
+    <input type="text" id="state"><br>
+
+    <label>Interests:</label>
+    <input type="text" id="interests"><br>
+
+    <label>Tone:</label>
+    <select id="tone">
+        <option value="Friendly">Friendly</option>
+        <option value="Inspirational">Inspirational</option>
+        <option value="Funny">Funny</option>
+    </select><br>
+
+    <label>Perspective:</label>
+    <select id="perspective">
+        <option value="First Person">First Person</option>
+        <option value="General Trivia">General Trivia</option>
+        <option value="Reflective">Reflective</option>
+    </select><br>
+
+    <label>Hook line:</label>
+    <input type="text" id="hook"><br><br>
+
+    <button onclick="generatePost()">Generate</button>
+    <button onclick="postToTwitter()">Post to Twitter</button>
+
+    <h3>Prompt</h3>
+    <textarea id="promptArea" rows="4" cols="50">No prompt returned.</textarea>
+
+    <h3>Generated Post</h3>
+    <textarea id="postArea" rows="6" cols="50">No post returned.</textarea>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
