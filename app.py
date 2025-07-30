@@ -20,7 +20,7 @@ twitter_api = tweepy.API(auth)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('social-form.html')
 
 @app.route("/generate", methods=["POST"])
 def generate():
